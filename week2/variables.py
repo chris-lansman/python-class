@@ -17,9 +17,10 @@ this_is_a_variable = "This is a variable which holds a 'string' type"
 # This formatting sytle is also called "camel case" and is prevalent in C/C++ languages
 thisIsAVariable = "This is also a variable"
 
+is_this_a_variable = thisIsAVariable
 
-print(this_is_a_variable)
-print(thisIsAVariable)
+print(is_this_a_variable)
+# print(thisIsAVariable)
 
 # These are some ILLEGAL variable names
 # 2my_variable <- variables cannot start with a number
