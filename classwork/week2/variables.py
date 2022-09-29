@@ -14,7 +14,7 @@
 this_is_a_variable = "This is a variable which holds a 'string' type"
 
 # However, you could also have made your variable look like this.
-# This formatting sytle is also called "camel case" and is prevalent in C/C++ languages
+# This formatting style is also called "camel case" and is prevalent in C/C++ languages
 thisIsAVariable = "This is also a variable"
 
 is_this_a_variable = thisIsAVariable
