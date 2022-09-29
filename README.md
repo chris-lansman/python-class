@@ -33,7 +33,7 @@ Your file name should be in the format LastName_FirstName_HW_Week#.py
       ex) Lansman_Chris_HW_Week2.py
 
 ##### Steps to upload HW assignments  
-Tutorial video here: TODO ADD VIDEO  
+Tutorial video here: https://drive.google.com/file/d/1VnX7EDE3oEiNmAyv73IK_6biTxCreIxz/view?usp=sharing
 
 1. Create the file you will save your code in down in the corresponding /python-class/student-hw/week# folder
 2. Once you have finished the file and verified it runs save your changes.
