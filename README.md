@@ -39,18 +39,31 @@ Tutorial video here: https://drive.google.com/file/d/1VnX7EDE3oEiNmAyv73IK_6biTx
 2. Once you have finished the file and verified it runs save your changes.
 3. Prepare the file for push (upload) to the repository here on gitlab
 4. From the command line:
-   1. Add your file to your local copy of the repository.
+   1. Create a new branch to hold your change
+   ```
+   git checkout -b my_branch_name
+   ```
+   2. Add your file to your local copy of the repository.
    ```
    git add student-hw/week#/LastName_FirstName_HW_Week#.py
    ```
-   2. Add a comment as to what this change is.
+   3. Add a comment as to what this change is.
    ```
    git commit -m "Adding my HW assignment for week 3 to the repository"
    ```
-   3. Finally "push" (upload your change to the this remote repository).
+   4. Create a branch to be pushed (non-admin users cannot push directly to the main branch)
+   ```
+   git checkout -b my_branch_name
+   ```
+   5. Finally "push" (upload your change to the this remote repository).
    ```
    git push
    ```
 If you have made it this far with no error messages.  
 Congratulations!  
 At this point you have uploaded your homework assignment for the week and are done.
+
+As a last step so you dont forget change back to the main branch
+```
+git checkout main
+```
