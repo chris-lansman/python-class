@@ -1,36 +1,21 @@
 # What is an operator?
+#   A: An operator is a character(s) that represent a specific mathematical or logical operation (ex. +,-,>,)
 # What is the purpose of a comparison operator and what does it do?
+#   A: The comparison operator allows you to compare two objects. It could be two strings, two values, as well as other complex types.
 # What does the ‘<’ operator do?
+#   A: Performs a 'less than' evaluation checking to see if the left operand is smaller than the right.
 # What does the ‘==’ operator do?
+#   A: Performs a 'equal to' comparison checking to see if the left and right operands are binary equal.
 # What does the ‘!=’ operator do?
+#   A: Performs a 'not equal to' comparison, checking if the left and right operands are not equal to each other.
 # Try running the following bits of code:
 # What does ‘10 < 30’ return?
+#   A: True
 # What does ‘30 < 20’ return?
+#   A: False
 # What does ‘20 <= 20’ return?
+#   A: True
 # What does ‘20 != 29’ return?
+#   A: True
 # What does the ‘if’ check do?
-# Copy the following code to a file and run:
-# if 10 < 20:
-#    print("Ten is less than 20!")
-# else:
-#    print("Ten is not less than 20!")
-#  Try running the following guessing game code:
-# number = 23
-# guess = int(input('Enter an integer : '))
- 
-# if guess == number:
-#     # New block starts here
-#     print('Congratulations, you guessed it.')
-#     print('(but you do not win any prizes!)')
-#     # New block ends here
-# elif guess < number:
-#     # Another block
-#     print('No, it is a little higher than that')
-#     # You can do whatever you want in a block ...
-# else:
-#     print('No, it is a little lower than that')
-#     # you must have guessed > number to reach here
- 
-# print('Done')
-# # This last statement is always executed,
-# # after the if statement is executed.
+#   A: performs a boolean check on an expression. 
