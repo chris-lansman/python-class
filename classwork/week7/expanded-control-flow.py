@@ -15,8 +15,8 @@
 #     print("Almost true!")
 
 # Example 2 - 'and' statements
-num = 10
-den = 20
+# num = 10
+# den = 20
 # if ((num >= 10) and (den <= 40)):
 #     print(f"area of the rectangle is {(num*den)}")
     
@@ -55,4 +55,21 @@ den = 20
 # while (num >= 0) or ((den/num) >= 0):
 #     print(f"num:{num}")
 #     num -= 1
+
+# 'for' can be used for more than just "range"
+# for char in "hello world!":
+#     print(char)
+
+############################
+# Nested layers of looping
+############################
+# for char in "hello world!":
+#     for x in "*****":
+#         print(x)    
+#     print(char)
+
+# What is the thing called we are "looping" over?
+#   A: An 'iterable'
+# for <var> in <iterable>:
+#     <statement(s)>
 
