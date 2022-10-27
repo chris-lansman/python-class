@@ -50,7 +50,7 @@
 # print('Item -1 is', shoplist[-1])
 # print('Item -2 is', shoplist[-2])
 # print('Character 0 is', name[0])
-#   A:
+#   A: 
 # Item 0 is apple
 # Item 1 is mango
 # Item 2 is carrot
