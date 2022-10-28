@@ -143,18 +143,18 @@
 # # Now lets add one user and remove another
 # remove_and_add_user('chris', 'kenny')
 # print_known_user_list()
-from user_account_functions import *
+# from user_account_functions import *
 
-while True:
-    user_name = get_user_name()
-    if verify_user_exists(user_name):
-        print(f"User {user_name} found. Welcome back!")
-    else:
-        print(f"User {user_name} not found, adding user to list of known users")
-        add_user_to_list(user_name)
-    break
+# while True:
+#     user_name = get_user_name()
+#     if verify_user_exists(user_name):
+#         print(f"User {user_name} found. Welcome back!")
+#     else:
+#         print(f"User {user_name} not found, adding user to list of known users")
+#         add_user_to_list(user_name)
+#     break
         
-delete_user_account("chris")
-print_known_user_list()
-remove_and_add_user('chris', 'kenny')
-print_known_user_list()
+# delete_user_account("chris")
+# print_known_user_list()
+# remove_and_add_user('chris', 'kenny')
+# print_known_user_list()
