@@ -2,9 +2,27 @@
 import getpass
 # Helper functions to encrypt and decrypt our password
 from password_cipher import *
+# Allows us to read in our password file 
+import json
 
-known_users = {'bob':'slwwcbrj'}
+# Empty user list
+known_users = {}
 
+# Reads a json formatted username/password file and stores it into known_users
+def load_user_database():
+    with open('passwords.json') as file:
+        data = file.read()
+    global known_users
+    known_users = json.loads(data)
+
+# Writes the current known_user's dictionary to our password.json file
+def write_users_to_file():
+    # Serializing json
+    json_object = json.dumps(known_users, indent=4)
+    with open("passwords.json", "w") as outfile:
+        outfile.write(json_object)
+
+# Checks the entered password against the stored password
 def check_password(user_name):
     password = getpass.getpass()
     encrypted_password = encryptPassword(password)
@@ -27,6 +45,12 @@ def login():
         known_users.update({user_name:''})
         password = getpass.getpass()
         known_users[user_name] = encryptPassword(password)
-        
+
+# Print the known_users list before we get started
+print("Known users before we load file:", known_users)
+# print the known users list once we have loaded it from the file
+load_user_database()
+print("Known users after we load file:", known_users)
 login()
-print(known_users)
+print("Final known users:", known_users)
+write_users_to_file()
