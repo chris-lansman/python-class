@@ -26,22 +26,22 @@ cwd = cwd + "\\"
 
 # # Ex1) Attempt to open file and if it does not exist create it. Then write simple output to it.
 # print("My current working directory is:\n", cwd)
-# f = open(cwd + "ex1.txt", "w+")
+# f = open(cwd + "ex.txt", "w+")
 # f.write("This is some simple output")
 # f.close()
 # # Ex2) Open a file and read out its contents
-# f = open(cwd + "ex1.txt", "r")
+# f = open(cwd + "ex.txt", "r")
 # print(f.read())
 # f.close()
 
 # # Ex3) Incorrect mode
 # # What happens if we accidentally open for "read-only" and then attempt to write to a file?
-# f = open(cwd + "ex1.txt", "r")
+# f = open(cwd + "ex.txt", "r")
 # f.write("Some more simple output")
 # f.close()
 # # Ex4) Incorrect mode
 # # What happens if we accidentally open for "write-only" and then attempt to read from the file?
-# f = open(cwd + "ex1.txt", "w")
+# f = open(cwd + "ex.txt", "w")
 # contents = f.read()
 # f.close()
 
@@ -50,3 +50,5 @@ cwd = cwd + "\\"
 # f1 = f.readlines()
 # print(type(f1))
 # print(f1)
+# for line in f1:
+#     print(line)
