@@ -5,12 +5,21 @@ from password_cipher import *
 # Allows us to read in our password file 
 import json
 
+import os
+# Current working directory (cwd)
+# This bit of snazzy code will sort out where on your computer this file is being run from
+# It will save off this value and then add on one last backslash (\) so its the proper path.
+# You have to "escape" a backslash as its a special character with another backslash to tell
+# the interpreter you wanted just one '\'
+cwd = os.path.dirname(__file__)
+cwd = cwd + "\\"
+
 # Empty user list
 known_users = {}
 
 # Reads a json formatted username/password file and stores it into known_users
 def load_user_database():
-    with open('passwords.json') as file:
+    with open(cwd + 'passwords.json') as file:
         data = file.read()
     global known_users
     known_users = json.loads(data)
@@ -19,9 +28,9 @@ def load_user_database():
 def write_users_to_file():
     # Serializing json
     json_object = json.dumps(known_users, indent=4)
-    with open("passwords.json", "w") as outfile:
+    with open(cwd + "passwords.json", "w") as outfile:
         outfile.write(json_object)
-
+        
 # Checks the entered password against the stored password
 def check_password(user_name):
     password = getpass.getpass()
