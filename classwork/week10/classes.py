@@ -147,3 +147,30 @@
 # # Lets call our helper function
 # myClassInstance.myPrivateFunctionCaller()
 
+# Lets put it all together into a meaningful example of a class
+# Real-world example
+#   At NTECH we want to have each student create a profile on our website
+#   ? What sort of information might a student have?
+#       Name, age, grade_level
+#   ? What sort of 'actions' might we want to do with a given student?
+#       Update their age, update their grade_level, display student's information
+# class NTECH_student:
+#     def __init__(self, name, age, grade_level):
+#         self.name = name
+#         self.age = age
+#         self.grade_level = grade_level
+#     def update_age(self, new_age):
+#         self.age = new_age
+#     def update_grade_level(self, new_grade_level):
+#         self.grade_level = new_grade_level
+#     def students_information(self):
+#         print(f"Student:     {self.name}")
+#         print(f"age:         {self.age}")
+#         print(f"grade level: {self.grade_level}")
+
+# chris = NTECH_student('chris', 99, 11)
+# chris.students_information()
+# chris.update_age(22)
+# chris.students_information()
+# chris.update_grade_level(4)    
+# chris.students_information()    
